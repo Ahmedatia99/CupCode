@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@theme {
+  --color-lighting: #f2f6f9;
+  --color-darkness:#2a322d;
+  --color-shiny:#0aa6d7;
+  --color-stroke:#7acde9;
+  --font-inter: "Inter", "sans-serif";
+  --font-courgette: "Courgette", "cursive";
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+.hero-bg{
+    background-image:url("./images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about-bg{
+    background-image:url("./images/abstract/icon-dotted-map-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+  }
+  
+  .animated {
+    animation: floatAnimation 2s ease-in-out infinite;
+  }
+
+  @keyframes rightAnimation {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(150px);
+    }
+  }
+  
+  .swiper {
+    animation: rightAnimation 5s ease-in-out infinite;
+  }
+
+  .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ef5c72, #ff7300, #7054e6, #f89321, #00ffd5, #00c7c4, #7a00ff, #ff00c8, #ef5c72);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #7054e6;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
