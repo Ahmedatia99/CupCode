@@ -4,8 +4,12 @@
   --color-darkness:#2a322d;
   --color-shiny:#0aa6d7;
   --color-stroke:#7acde9;
+  --color-older:#f1f7f7;
   --font-inter: "Inter", "sans-serif";
   --font-courgette: "Courgette", "cursive";
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body{
@@ -29,15 +33,15 @@ body{
 
 @keyframes floatAnimation {
     0%, 100% {
-      transform: translateY(0);
+      transform: translateY(-20px);
     }
     50% {
-      transform: translateY(20px);
+      transform: translateY(30px);
     }
   }
   
   .animated {
-    animation: floatAnimation 2s ease-in-out infinite;
+    animation: floatAnimation 10s ease-in-out infinite;
   }
 
   @keyframes rightAnimation {

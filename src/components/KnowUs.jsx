@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa6";
 
 const KnowUs = () => {
   return (
-    <main className="w-screen h-screen container mx-auto pb-10 max-sm:px-2">
+    <main className="px-5 w-screen h-screen container mx-auto pb-10 max-sm:px-2">
       <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-20 items-center h-full">
         <div className="about-bg z-0 relative max-sm:order-2">
           <div className="flex justify-center items-center gap-5 w-full h-full">

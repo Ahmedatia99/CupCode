@@ -90,3 +90,31 @@ export const navigation = [
       color:"#00c7c4"
     },
   ]
+
+  export const questions = [
+    {
+      id:"0",
+      ques:"lorem ipsum dolor sit amet cons ectetur",
+      ans : "lorem ipsum dolor sit amet"
+    },
+    {
+      id:"0",
+      ques:"lorem ipsum dolor sit amet cons ectetur",
+      ans : "lorem ipsum dolor sit amet"
+    },
+    {
+      id:"0",
+      ques:"lorem ipsum dolor sit amet cons ectetur",
+      ans : "lorem ipsum dolor sit amet"
+    },
+    {
+      id:"0",
+      ques:"lorem ipsum dolor sit amet cons ectetur",
+      ans : "lorem ipsum dolor sit amet"
+    },
+    {
+      id:"0",
+      ques:"lorem ipsum dolor sit amet cons ectetur",
+      ans : "lorem ipsum dolor sit amet"
+    }
+  ]
