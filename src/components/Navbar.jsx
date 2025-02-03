@@ -19,7 +19,7 @@ const Navbar = () => {
             key={el.id}
             href={el.url}
             onClick={() => setActiveLink(el.title)}
-            className={`text-md font-semibold p-4 max-sm:p-2 shadow-shiny ${
+            className={`text-lg max-sm:text-sm font-semibold p-4 max-sm:p-2 ${
               activeLink === el.title ? "text-shiny" : "text-darkness"
             } hover:text-shiny transition-all`}
           >
