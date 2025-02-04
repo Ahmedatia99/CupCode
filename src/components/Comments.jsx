@@ -1,4 +1,3 @@
-import React from "react";
 import Swiping from "./Swiping";
 
 const Comments = () => {

@@ -1,18 +1,19 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { mainQuestion, questions } from "../constants/index";
-import FAQ from './FAQ';
+import FAQ from "./FAQ";
 
 const Questions = () => {
-  const [clicked, setClicked] = useState(null); // Track the active category
+  const [clicked, setClicked] = useState<number | null>(null);
 
-  // Filter FAQs based on the active category
   const filteredQuestions = questions.filter(
-    (faq) => faq.categoryId === clicked
+    (faq) => Number(faq.categoryId) === clicked
   );
 
   return (
     <main className="py-10 h-screen bg-older overflow-hidden relative">
-      <div className="absolute"><img src="/images/abstract/icon-dotted-map-2.png "/></div>
+      <div className="absolute">
+        <img src="/images/abstract/icon-dotted-map-2.png" alt="Background Icon" />
+      </div>
       <div className="container mx-auto px-5 relative z-0 h-full">
         <div className="flex justify-center items-center gap-5 relative z-20 h-full flex-wrap">
           {/* Sidebar Categories */}
@@ -20,9 +21,9 @@ const Questions = () => {
             {mainQuestion.map((el) => (
               <a
                 key={el.id}
-                onClick={() => setClicked(el.id)} // Set active category
+                onClick={() => setClicked(Number(el.id))} // Ensure it's a number
                 className={`hover:border-l-4 ml-[4px] hover:ml-0 hover:border-eclipse p-2 cursor-pointer transition-all ${
-                  clicked === el.id ? "border-l-4 border-eclipse ml-0 font-bold" : ""
+                  clicked === Number(el.id) ? "border-l-4 border-eclipse ml-0 font-bold" : ""
                 }`}
               >
                 <h1 className="text-xl font-semibold">{el.heading}</h1>

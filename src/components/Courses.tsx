@@ -1,9 +1,7 @@
-import React from "react";
 import { courses } from "./../constants/index.ts";
 import { contentCourses } from "./../constants/index.ts";
 import { MdOutlineDone } from "react-icons/md";
 import { Button } from "./Button";
-import { FaArrowRight } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,7 +10,7 @@ import { Pagination } from "swiper/modules";
 const Courses = () => {
   const pagination = {
     clickable: true,
-    renderBullet: function (index, className) {
+    renderBullet: function (index: number, className: string) {
       return `<span class="${className}"> ${index + 1} </span>`;
     },
   };

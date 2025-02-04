@@ -1,4 +1,3 @@
-import React from "react";
 import { comments } from "../constants";
 import { FaStar } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,17 +6,15 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Swiping = () => {
-  const pagination = {
-    clickable: true,
-    renderBullet: (className) => 
-      `<span class="${className}"></span>`,
-  };
-
   return (
     <Swiper
       slidesPerView={1}
       spaceBetween={40}
-      pagination={pagination}
+      pagination={{
+        clickable: true,
+        renderBullet: (index, className) =>
+          `<span class="${className}"></span>`,
+      }}
       modules={[Pagination]}
       className="mySwiper"
     >
@@ -38,7 +35,7 @@ const Swiping = () => {
               {item.name}
             </h1>
             <div className="flex gap-2 px-5 max-sm:px-3 pt-2">
-              {Array.from({ length: 4 }, (_, index) => (
+              {Array.from({ length: item.rating }, (_, index) => (
                 <FaStar key={index} size={20} className="text-shiny" />
               ))}
             </div>

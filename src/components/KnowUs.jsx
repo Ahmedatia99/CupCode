@@ -1,4 +1,3 @@
-import React from "react";
 import { feature } from "../constants/index.ts";
 import { FaCheck } from "react-icons/fa6";
 

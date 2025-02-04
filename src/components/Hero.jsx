@@ -1,4 +1,3 @@
-import React from "react";
 import { icons } from "./../constants/index";
 import { Button } from "./Button";
 const Hero = () => {

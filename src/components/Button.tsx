@@ -1,8 +1,7 @@
-import React from "react";
 import { HTMLAttributes } from "react";
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "second ";
+  variant?: "primary" | "second";
   action: string;
   displays?: "true" | "false";
 }

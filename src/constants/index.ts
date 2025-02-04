@@ -1,4 +1,9 @@
-export const navigation = [
+export interface NavigationItem {
+  id: string;
+  title: string;
+  url: string;
+}
+export const navigation:NavigationItem[] = [
   {
     id: "0",
     title: "Home",
@@ -15,44 +20,53 @@ export const navigation = [
     url: "#about",
   },
 ];
-
-export const icons = [
+export interface IconItem {
+  id: string;
+  src: string;
+  alt: string;
+  left:number,
+  top:number
+}
+export const icons:IconItem[] = [
   {
     id: "0",
-    src: "./images/coding.png",
+    src: "/images/coding.png",
     alt: "coding",
     left: 60,
     top: 10,
   },
   {
     id: "1",
-    src: "./images/dollar.png",
+    src: "/images/dollar.png",
     alt: "dollar",
     left: 35,
     top: 5,
   },
   {
     id: "2",
-    src: "./images/light.png",
+    src: "/images/light.png",
     alt: "light",
     left: 75,
     top: 25,
   },
   {
     id: "3",
-    src: "./images/p-s.png",
+    src: "/images/p-s.png",
     alt: "problem solving",
     left: 50,
     top: 20,
   },
 ];
-
-export const objectives = [
+export interface ObjectivesItem {
+  id: string;
+  title: string;
+  info: string;
+}
+export const objectives:ObjectivesItem[] = [
   {
     id: "0",
     title: "Free Trials",
     info: "Lorem ipsum dolor sit amet cons ectetur. Non convallis sed id.",
-    icon: "",
   },
   {
     id: "1",
@@ -70,81 +84,104 @@ export const objectives = [
     info: "Lorem ipsum dolor sit amet cons ectetur. Non convallis sed id.",
   },
 ];
-
-export const feature = [
+export interface FeatureItem {
+  id:string;
+  title:string;
+  color:string
+}
+export const feature:FeatureItem[] = [
   { id: "0", title: "Expert trainers", color: "#ef5c72" },
   { id: "1", title: "Online learning", color: "#7054e6" },
   { id: "2", title: "Lifetime access", color: "#f89321" },
   { id: "3", title: "Great results", color: "#00c7c4" },
 ];
-
-export const questions = [
+export interface QuestionsItem {
+  id:number;
+  categoryId:number;
+  ques:string;
+  ans:string
+}
+export const questions:QuestionsItem[] = [
   {
-    id: "0",
+    id: 0,
     categoryId: 1,
     ques: "lorem ipsum dolor sit amet cons ectetur",
     ans: "lorem ipsum dolor sit amet",
   },
   {
-    id: "1",
+    id: 1,
     categoryId: 2,
     ques: "lorem ipsum dolor sit amet cons ectetur",
     ans: "lorem ipsum dolor sit amet",
   },
   {
-    id: "2",
+    id: 2,
     categoryId: 2,
     ques: "lorem ipsum dolor sit amet cons ectetur",
     ans: "lorem ipsum dolor sit amet",
   },
   {
-    id: "3",
+    id: 3,
     categoryId: 3,
     ques: "lorem ipsum dolor sit amet cons ectetur",
     ans: "lorem ipsum dolor sit amet",
   },
   {
-    id: "4",
+    id: 4,
     categoryId: 3,
     ques: "lorem ipsum dolor sit amet cons ectetur",
     ans: "lorem ipsum dolor sit amet",
   },
   {
-    id: "5",
+    id: 5,
     categoryId: 3,
     ques: "lorem ipsum dolor sit amet cons ectetur",
     ans: "lorem ipsum dolor sit amet",
   },
 ];
-
-export const comments = [
+export interface CommentItem {
+  id: string;
+  name:string;
+  comment:string;
+  img:string;
+  rating: number; 
+}
+export const comments:CommentItem[] = [
   {
     id: "0",
     name: "Ahmed Atia",
     comment: "lorem ipsum dolor sit amet cons ectetur al met amet et al.",
     img: "/images/hawara.jpg",
+    rating:5
   },
   {
     id: "1",
     name: "Ahmed Atia",
     comment: "lorem ipsum dolor sit amet cons ectetur al met amet et al.",
     img: "/images/hawara.jpg",
+    rating:4
   },
   {
     id: "2",
     name: "Ahmed Atia",
     comment: "lorem ipsum dolor sit amet cons ectetur al met amet et al.",
     img: "/images/hawara.jpg",
+    rating:5
   },
   {
     id: "3",
     name: "Ahmed Atia",
     comment: "lorem ipsum dolor sit amet cons ectetur al met amet et al.",
     img: "/images/hawara.jpg",
+    rating:4
   },
 ];
-
-export const mainQuestion = [
+export interface mainQuestionItem{
+  id: number;
+  heading: string;
+  info:string;
+}
+export const mainQuestion:mainQuestionItem[] = [
   {
     id: 1,
     heading: "Policies",
@@ -161,7 +198,17 @@ export const mainQuestion = [
     info: "Many desktop publishing packages and web page editors now use",
   },
 ];
-
+export interface CourseItem{
+  id:number;
+  level: string,
+  discount: string,
+  mainPrice: string,
+  duration: string,
+  session: string,
+  hours: string,
+  preRequests: string,
+  contentTitle: string,
+}
 export const courses = [
   {
     id: 0,
@@ -198,7 +245,7 @@ export const courses = [
   },
 ];
 
-export const contentCourses = [
+export const contentCourses:string[][] = [
   [
     "C++ Basics & Data Types",
     "Operators & Conditional Statements",
