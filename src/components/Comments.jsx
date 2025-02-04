@@ -2,7 +2,7 @@ import Swiping from "./Swiping";
 
 const Comments = () => {
   return (
-    <main className="max-sm:px-2 px-5 h-screen py-10 max-sm:py-5  flex justify-center bg-lighting overflow-hidden">
+    <main className="max-sm:px-2 px-5 h-screen py-10 max-sm:py-2  flex justify-center bg-lighting overflow-hidden">
       <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-5 max-md:grid-cols-1 items-center container mx-auto h-full">
         {/*  */}
         <div className="flex flex-col justify-center relative w-full h-full">

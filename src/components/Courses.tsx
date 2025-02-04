@@ -15,7 +15,7 @@ const Courses = () => {
     },
   };
   return (
-    <main className=" container mx-auto py-8 overflow-hidden">
+    <main className=" container mx-auto py-8 max-sm:py-2 overflow-hidden">
       <div className="  h-screen flex justify-center items-center relative max-sm:pl-14 max-sm:pr-10 ">
         <Swiper
           slidesPerView={3}
@@ -116,11 +116,11 @@ const Courses = () => {
           />
           <img
             src="/images/abstract/icon-book.webp"
-            className="absolute top-[5%] -z-50 left-12"
+            className="absolute top-[5%] max-sm:left-2 max-sm:top-5  -z-50 left-12"
           />
           <img
             src="/images/abstract/icon-paper-plan.webp"
-            className="absolute top-[55%] left-[10%] -z-50 rotate-6"
+            className="absolute top-[55%] left-[10%] max-sm:bottom-0 -z-50 rotate-6"
           />
         </div>
       </div>

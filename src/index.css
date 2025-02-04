@@ -135,7 +135,7 @@ main {
   width: 100%;
   height: calc(100% - 20px);
   content: "";
-  border: 1px solid #0aa6d7;
+  border: 2px solid var(--color-eclipse);
   border-radius: 15px;
   transition: all 500ms ease;
   z-index: -1;

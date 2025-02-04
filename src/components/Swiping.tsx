@@ -1,7 +1,7 @@
 import { comments } from "../constants";
 import { FaStar } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -11,11 +11,14 @@ const Swiping = () => {
       slidesPerView={1}
       spaceBetween={40}
       pagination={{
-        clickable: true,
-        renderBullet: (className) =>
-          `<span class="${className}"></span>`,
+        clickable: false,
+        renderBullet: (className) => `<span class="${className}"></span>`,
       }}
-      modules={[Pagination]}
+      autoplay={{
+        delay: 3500,
+        disableOnInteraction: false,
+      }}
+      modules={[Pagination, Autoplay]}
       className="mySwiper"
     >
       {comments.map((item) => (
@@ -27,7 +30,7 @@ const Swiping = () => {
             <img
               src={item.img}
               alt="comment"
-              className="w-48 h-auto rounded-xl mt-10 max-sm:mt-0"
+              className="w-48 h-auto rounded-xl mt-10 max-sm:mt-0 max-sm:w-34"
             />
           </div>
           <div className="bg-white h-50 max-sm:h-46 text-darkness max-w-sm relative rounded-2xl mt-10 max-sm:mt-0">
