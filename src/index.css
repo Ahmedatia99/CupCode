@@ -37,19 +37,19 @@ main {
 }
 
 .hero-bg {
-  background-image: url("./images/hero-bg.png");
+  background-image: url("./assets/images/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .about-bg {
-  background-image: url("./images/abstract/icon-dotted-map-2.png");
+  background-image: url("./assets/images/icon-dotted-map-2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .comment-bg {
-  background-image: url("./images/abstract/cover-comment.png");
+  background-image: url("./assets/images/cover-comment.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

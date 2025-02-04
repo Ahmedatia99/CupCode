@@ -12,7 +12,7 @@ const Questions = () => {
   return (
     <main className="py-10 h-screen bg-older overflow-hidden relative">
       <div className="absolute">
-        <img src="/images/abstract/icon-dotted-map-2.png" alt="Background Icon" />
+        <img src="../assets/images/icon-dotted-map-2.png" alt="Background Icon" />
       </div>
       <div className="container mx-auto px-5 relative z-0 h-full">
         <div className="flex justify-center items-center gap-5 relative z-20 h-full flex-wrap">
