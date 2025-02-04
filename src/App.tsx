@@ -2,9 +2,9 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import KnowUs from "./components/KnowUs";
 import Questions from "./components/Questions";
-import Comments from './components/Comments';
-import Courses from './components/Courses';
-import Offer from './components/Offer';
+import Comments from "./components/Comments";
+import Courses from "./components/Courses";
+import Offer from "./components/Offer";
 
 function App() {
   return (
