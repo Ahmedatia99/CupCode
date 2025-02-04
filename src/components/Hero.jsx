@@ -28,7 +28,7 @@ const Hero = () => {
           </p>
           <Button action="Contact Now" />
 
-          <div className="swiper mt-20 lg:mt-10 max-sm:hidden">
+          <div className="swiping mt-20 lg:mt-10 max-sm:hidden">
             <img src="/images/abstract/dots-1.png" />
           </div>
         </div>
@@ -45,7 +45,7 @@ const Hero = () => {
           ))}
           <img
             src="/images/main-img.png"
-            className="aspect-auto relative left-0 bottom-0 3xl:top-0 lg:bottom-32 lg:w-80 w-96 3xl:scale-125 max-sm:-bottom-20 max-sm:left-0 max-sm:w-60 max-sm:scale-125 max-md:w-70 max-md:bottom-0"
+            className="aspect-auto relative left-0 bottom-0 3xl:top-0 lg:bottom-32 lg:w-80 w-96 3xl:scale-125 max-sm:bottom-20 max-sm:left-0 max-sm:w-60 max-sm:scale-125 max-md:w-70 max-md:bottom-0"
           />
         </div>
       </div>
