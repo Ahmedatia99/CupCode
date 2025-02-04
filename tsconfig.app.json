@@ -20,7 +20,12 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    /* Additional settings */
+    "allowJs": true,             // Allow JavaScript files to be imported
+    "resolveJsonModule": true,   // Allow JSON modules (if used)
+    "checkJs": true              // Check JavaScript files for errors
   },
-  "include": ["src"]
+  "include": ["src", "src/components/**/*.jsx"]  // Explicitly include JSX files
 }
