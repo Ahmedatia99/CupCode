@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <main className=" bg-off py-8 overflow-hidden max-md:h-screen  max-sm:px-4">
+    <main className=" bg-off py-8 overflow-hidden max-md:h-screen  max-sm:px-4 px-6 border-t-2 border-eclipse max-md:border-t-0">
       <div className="container mx-auto ">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
