@@ -48,12 +48,6 @@ main {
   background-size: cover;
   background-position: center;
 }
-.comment-bg {
-  background-image: url("./assets/images/cover-comment.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 @keyframes floatAnimation {
   0%,
