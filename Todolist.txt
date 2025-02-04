@@ -1,0 +1,5 @@
+[1] change font
+[2] hero section edit
+[3] about us edit images
+[4] FAQ
+[5] Courses Section
