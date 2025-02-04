@@ -7,21 +7,21 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   displays?: "true" | "false";
 }
 
-export const Button = ({ action, variant = "primary" }: ButtonProps) => {
+export const Button = ({ action, variant = "primary", children}: ButtonProps) => {
   const variants = {
-    primary:
-      " bg-stroke text-white py-3 px-5 tablet:w-auto ",
-    second: " text-white hover:scale-95 py-3 px-5 tablet:w-auto",
+    primary: "bg-eclipse text-white py-3 px-8 tablet:w-auto glow-on-hover",
+    second: "text-white py-1.5 px-4 tablet:w-auto bg-eclipse  hover:opacity-95 transition-all w-full shadow-lg",
   }[variant];
 
   return (
     <button
       className={`
-        glow-on-hover
+        cursor-pointer rounded-lg
         ${variants}
         `}
     >
       <span className={`text-[16px] px-2`}>{action}</span>
+      {children}
     </button>
   );
 };

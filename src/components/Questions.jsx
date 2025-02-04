@@ -1,18 +1,38 @@
-import React from "react";
-import FAQ from "./FAQ";
+import React, { useState } from "react";
+import { mainQuestion, questions } from "../constants/index";
+import FAQ from './FAQ';
+
 const Questions = () => {
+  const [clicked, setClicked] = useState(null); // Track the active category
+
+  // Filter FAQs based on the active category
+  const filteredQuestions = questions.filter(
+    (faq) => faq.categoryId === clicked
+  );
+
   return (
-    <main className="py-10 h-screen bg-older">
+    <main className="py-10 h-screen bg-older overflow-hidden relative">
+      <div className="absolute"><img src="/images/abstract/icon-dotted-map-2.png "/></div>
       <div className="container mx-auto px-5 relative z-0 h-full">
-        <div className="flex justify-around items-center relative z-20 h-full flex-wrap">
-          <img src="./images/abstract/qfa.png" alt="question" className="max-sm:hidden"/>
-          <FAQ />
-        </div>
-        <div className=" absolute left-0 top-[30%] max-sm:top-0 -z-10 animated">
-          <img src="/images/abstract/icon-group-1.png" alt="abstract" />
-        </div>
-        <div className=" absolute right-0 top-[30%] max-sm:bottom-0 -z-10 animated">
-          <img src="/images/abstract/icon-group-2.png" alt="abstract" />
+        <div className="flex justify-center items-center gap-5 relative z-20 h-full flex-wrap">
+          {/* Sidebar Categories */}
+          <div className="bg-[#f8f8f8] text-gray-600 max-w-80 p-5 flex flex-col items-center gap-5 relative">
+            {mainQuestion.map((el) => (
+              <a
+                key={el.id}
+                onClick={() => setClicked(el.id)} // Set active category
+                className={`hover:border-l-4 ml-[4px] hover:ml-0 hover:border-eclipse p-2 cursor-pointer transition-all ${
+                  clicked === el.id ? "border-l-4 border-eclipse ml-0 font-bold" : ""
+                }`}
+              >
+                <h1 className="text-xl font-semibold">{el.heading}</h1>
+                <p className="text-sm">{el.info}</p>
+              </a>
+            ))}
+          </div>
+
+          {/* FAQ Component */}
+          <FAQ questions={filteredQuestions} />
         </div>
       </div>
     </main>
