@@ -12,7 +12,7 @@ const Swiping = () => {
       spaceBetween={40}
       pagination={{
         clickable: true,
-        renderBullet: (index, className) =>
+        renderBullet: (className) =>
           `<span class="${className}"></span>`,
       }}
       modules={[Pagination]}
