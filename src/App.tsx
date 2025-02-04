@@ -5,7 +5,7 @@ import Questions from "./components/Questions";
 import Comments from "./components/Comments";
 import Courses from "./components/Courses";
 import Offer from "./components/Offer";
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="snap-y snap-mandatory h-screen">
@@ -18,6 +18,7 @@ function App() {
       <Questions />
       <Offer />
       <Comments />
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="p-4 bg-off sm:p-6 border-t-2 border-eclipse">
-      <div className="mx-auto max-w-screen-xl">
+    <main className=" bg-off py-8 overflow-hidden max-md:h-screen  max-sm:px-4">
+      <div className="container mx-auto ">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com" className="flex items-center">
@@ -154,7 +154,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </main>
   );
 };
 
