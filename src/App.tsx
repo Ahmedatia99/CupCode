@@ -4,6 +4,7 @@ import KnowUs from "./components/KnowUs";
 import Questions from "./components/Questions";
 import Comments from './components/Comments';
 import Courses from './components/Courses';
+import Offer from './components/Offer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Courses />
       <KnowUs />
       <Questions />
+      <Offer />
       <Comments />
     </div>
   );

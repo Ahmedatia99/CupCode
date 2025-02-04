@@ -48,6 +48,9 @@ main {
   background-size: cover;
   background-position: center;
 }
+.offer-bg {
+  background-image: url("./assets/images/offer.png");
+}
 
 @keyframes floatAnimation {
   0%,
@@ -140,13 +143,7 @@ main {
   transition: all 500ms ease;
   z-index: -1;
 }
-/* .swiper-pagination-bullet-active {
-  background: var(--color-shiny) !important;
-}
-.swiper-pagination {
-  left: 80px !important;
-  bottom: -6px !important;
-} */
+
 @media (width < 640px) {
   .swiper-pagination {
     left: 0px !important;
@@ -158,7 +155,7 @@ main {
   position: relative !important;
   margin-top: 20px;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   width: 30px !important;
   height: 30px !important;
   padding-top: 3px;
@@ -169,8 +166,8 @@ main {
   font-weight: 600;
   text-align: center;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: var(--color-eclipse) !important;
   color: white;
-  
 }
+

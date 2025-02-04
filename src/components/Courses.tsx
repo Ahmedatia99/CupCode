@@ -104,7 +104,7 @@ const Courses = () => {
                 ))}
               </div>
               <div className="text-center mt-8 max-sm:mt-4 w-full">
-                <Button action="Read More" variant="second"></Button>
+                <Button action="Read More" variant="second" className="w-full"></Button>
               </div>
             </SwiperSlide>
           ))}
