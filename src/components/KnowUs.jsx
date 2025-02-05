@@ -5,7 +5,7 @@ const KnowUs = () => {
   return (
     <main className="px-5 w-screen h-screen container mx-auto pb-10 max-sm:px-3">
       <div className="grid grid-cols-2 max-sm:grid-cols-1 max-md:grid-cols-1 gap-20 items-center h-full">
-        <div className="about-bg z-0 relative max-md:order-2 max-sm:hidden">
+        <div className="about-bg bg-cover bg-center bg-no-repeat z-0 relative max-md:order-2 max-sm:hidden">
           <div className="flex justify-center items-center gap-5 w-full h-full ">
             <img
               src="/images/hawara.jpg"

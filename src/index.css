@@ -38,18 +38,15 @@ main {
 
 .hero-bg {
   background-image: url("./assets/images/hero-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .about-bg {
   background-image: url("./assets/images/icon-dotted-map-2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .offer-bg {
   background-image: url("./assets/images/offer.png");
+}
+.banner-bg{
+  background-image: url("./assets/images/banner-bg.png");
 }
 
 @keyframes floatAnimation {

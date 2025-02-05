@@ -5,11 +5,11 @@ import Questions from "./components/Questions";
 import Comments from "./components/Comments";
 import Courses from "./components/Courses";
 import Offer from "./components/Offer";
-import Footer from "./components/Footer";
+import Contact from './components/Contact';
 function App() {
   return (
     <div className="snap-y snap-mandatory h-screen">
-      <div className="hero-bg w-full overflow-hidden py-10 max-sm:py-6 px-5 snap-start">
+      <div className="hero-bg bg-cover bg-center bg-no-repeat w-full overflow-hidden py-10 max-sm:py-6 px-5 snap-start">
         <Navbar />
         <Hero />
       </div>
@@ -18,7 +18,7 @@ function App() {
       <Questions />
       <Offer />
       <Comments />
-      <Footer />
+      <Contact/>
     </div>
   );
 }

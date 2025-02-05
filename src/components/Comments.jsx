@@ -31,8 +31,8 @@ const Comments = () => {
             />
           </div>
         </div>
-        <div className="">
-          <img src="/images/abstract/cover-comment.png" className="absolute max-md:w-48" />
+        <div>
+          <img src="/images/abstract/cover-comment.png" className="absolute max-md:w-48"/>
           <Swiping />
         </div>
       </div>

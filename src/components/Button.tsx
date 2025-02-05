@@ -17,6 +17,7 @@ export const Button = ({
     primary: "bg-shiny text-white py-3 px-8 glow-on-hover",
     second:
       "text-white py-1.5 px-4  bg-shiny  hover:opacity-95 transition-all shadow-lg",
+    morning: "text-shiny py-1.5 px-4 bg-white font-medium",
   }[variant];
 
   return (

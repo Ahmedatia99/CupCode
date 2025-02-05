@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion , AnimatePresence  } from "framer-motion";
+
 
 interface FAQItem {
   id: number;
@@ -53,18 +54,19 @@ const FAQ: React.FC<FAQProps> = ({ questions }) => {
                   )}
                 </button>
               </div>
-
-              {visibleIndex === el.id && (
+              <AnimatePresence>
+              {visibleIndex === el.id ? (
                 <motion.div
-                  initial={{ opacity: 1, height: 0 }}
+                  initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: "auto" }}
-                  exit={{ opacity: 0, height: 0 }}
+                  exit={{ opacity: 1, height: 0 }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                   className="overflow-hidden mt-4"
                 >
                   <p className="text-darkness text-sm md:text-base">{el.ans}</p>
                 </motion.div>
-              )}
+              ):null}
+              </AnimatePresence>
             </div>
           ))
         ) : (

@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <main className=" bg-off py-8 overflow-hidden max-md:h-screen  max-sm:px-4 px-6 border-t-2 border-shiny max-md:border-t-0">
+    <main className=" bg-white pt-8 max-sm:pb-0 overflow-hidden max-sm:px-3 px-6 border-t-2 border-shiny max-md:border-t-0">
       <div className="container mx-auto ">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -12,7 +12,7 @@ const Footer = () => {
               />
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 max-sm:gap-2 sm:grid-cols-3 max-sm:text-xs">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
                 Resources
@@ -75,9 +75,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-shiny sm:mx-aut lg:my-8" />
+        <hr className="my-6 max-sm:my-3 border-shiny sm:mx-aut lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center ">
+          <span className="text-xs text-gray-500 sm:text-center">
             © 2022{" "}
             <a href="https://flowbite.com" className="hover:underline">
               Flowbite™
