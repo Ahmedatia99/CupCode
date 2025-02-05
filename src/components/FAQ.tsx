@@ -29,7 +29,7 @@ const FAQ: React.FC<FAQProps> = ({ questions }) => {
               className="px-3 py-5 border-b-2 border-shiny bg-[#f8f8f8]"
             >
               <div className="flex items-center justify-between ">
-                <h2 className="text-darkness text-base md:text-lg">
+                <h2 className="text-darkness text-base md:text-lg max-sm:text-sm">
                   {el.ques}
                 </h2>
                 <button
@@ -68,7 +68,7 @@ const FAQ: React.FC<FAQProps> = ({ questions }) => {
             </div>
           ))
         ) : (
-          <p className="text-gray-500 text-center">No FAQs available.</p>
+          <p className="text-gray-500 text-center">Select type of Questions.</p>
         )}
       </div>
     </section>
