@@ -15,8 +15,16 @@ const Courses = () => {
     },
   };
   return (
-    <main className=" container mx-auto py-8 max-sm:py-2 overflow-hidden">
-      <div className="  h-screen flex justify-center items-center relative max-sm:pl-14 max-sm:pr-10 ">
+    <main className="h-screen container mx-auto py-8 max-sm:py-2 overflow-hidden">
+      <div className="relative mb-10 max-sm:mb-3">
+        <h1 className="text-center text-gray-300 font-bold text-6xl max-sm:text-5xl tracking-widest">
+          Courses
+        </h1>
+        <p className="text-center relative -top-5 text-shiny font-semibold text-2xl max-sm:text-lg tracking-tighter">
+          Course Subscription Plan
+        </p>
+      </div>
+      <div className="flex justify-center items-center relative max-sm:pl-14 max-sm:pr-10 ">
         <Swiper
           slidesPerView={3}
           spaceBetween={10}
@@ -113,14 +121,14 @@ const Courses = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="">
+        <div>
           <img
             src="/images/abstract/price-1.webp"
-            className="absolute top-[10%] -z-50 right-16 max-sm:hidden"
+            className="absolute -top-20 -z-50 right-0 max-sm:hidden"
           />
           <img
             src="/images/abstract/icon-book.webp"
-            className="absolute top-[5%] max-sm:left-2 max-sm:top-5  -z-50 left-12"
+            className="absolute -top-20 max-sm:left-2 max-sm:top-5  -z-50 left-12"
           />
           <img
             src="/images/abstract/icon-paper-plan.webp"
