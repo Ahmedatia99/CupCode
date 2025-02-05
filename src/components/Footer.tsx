@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <main className=" bg-off py-8 overflow-hidden max-md:h-screen  max-sm:px-4 px-6 border-t-2 border-eclipse max-md:border-t-0">
+    <main className=" bg-off py-8 overflow-hidden max-md:h-screen  max-sm:px-4 px-6 border-t-2 border-shiny max-md:border-t-0">
       <div className="container mx-auto ">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-eclipse sm:mx-aut lg:my-8" />
+        <hr className="my-6 border-shiny sm:mx-aut lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center ">
             © 2022{" "}

@@ -30,7 +30,7 @@ const KnowUs = () => {
         </div>
         {/* text info */}
         <div className="pt-10 max-w-lg relative max-sm:order-1 max-md:order-1">
-          <span className="text-2xl max-sm:text-md max-md:text-lg text-eclipse font-semibold">
+          <span className="text-2xl max-sm:text-md max-md:text-lg text-shiny font-semibold">
             Get to know us
           </span>
           <h1 className="text-5xl max-sm:text-2xl max-md:text-3xl font-bold text-darkness leading-14 max-md:leading-10 max-sm:leading-8 tracking-tight">

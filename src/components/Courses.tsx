@@ -54,7 +54,7 @@ const Courses = () => {
           {courses.map((item) => (
             <SwiperSlide
               key={item.id}
-              className=" border-2 p-8 max-sm:p-4 rounded-xl border-eclipse bg-white shadow-xl text-darkness 3xl:max-w-sm lg:max-w-sm"
+              className=" border-2 p-8 max-sm:p-4 rounded-xl border-shiny bg-white shadow-xl text-darkness 3xl:max-w-sm lg:max-w-sm"
             >
               <div className="flex flex-col  items-center">
                 <h1 className="text-2xl max-sm:text-xl capitalize font-semibold mb-5 max-sm:mb-3">
@@ -72,13 +72,13 @@ const Courses = () => {
                   </div>
                 </h2>
                 <div className="flex justify-center items-center text-xs gap-1 mt-3">
-                  <span className="border bg-eclipse  text-white px-3 py-1 rounded-xl shadow-lg border-none">
+                  <span className="border bg-shiny  text-white px-3 py-1 rounded-xl shadow-lg border-none">
                     {item.duration} months
                   </span>
-                  <span className="border bg-eclipse  text-white px-3 py-1 rounded-xl shadow-lg border-none">
+                  <span className="border bg-shiny  text-white px-3 py-1 rounded-xl shadow-lg border-none">
                     {item.session} session
                   </span>
-                  <span className="border bg-eclipse  text-white px-3 py-1 rounded-xl shadow-lg border-none">
+                  <span className="border bg-shiny  text-white px-3 py-1 rounded-xl shadow-lg border-none">
                     {item.hours} hours
                   </span>
                 </div>
@@ -96,7 +96,7 @@ const Courses = () => {
                 </h1>
                 {contentCourses[item.id].map((content, index) => (
                   <h1 className="flex items-center gap-3">
-                    <MdOutlineDone className="text-eclipse" />
+                    <MdOutlineDone className="text-shiny" />
                     <p key={index} className="text-xs">
                       {content}
                     </p>
@@ -104,7 +104,11 @@ const Courses = () => {
                 ))}
               </div>
               <div className="text-center mt-8 max-sm:mt-4 w-full">
-                <Button action="Read More" variant="second" className="w-full"></Button>
+                <Button
+                  action="Read More"
+                  variant="second"
+                  className="w-full"
+                ></Button>
               </div>
             </SwiperSlide>
           ))}

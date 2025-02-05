@@ -26,7 +26,7 @@ const FAQ: React.FC<FAQProps> = ({ questions }) => {
           questions.map((el) => (
             <div
               key={el.id}
-              className="px-3 py-5 border-b-2 border-eclipse bg-[#f8f8f8]"
+              className="px-3 py-5 border-b-2 border-shiny bg-[#f8f8f8]"
             >
               <div className="flex items-center justify-between ">
                 <h2 className="text-darkness text-base md:text-lg">
@@ -43,12 +43,12 @@ const FAQ: React.FC<FAQProps> = ({ questions }) => {
                   {visibleIndex === el.id ? (
                     <FaMinus
                       size={20}
-                      className="md:ml-8 mobile:ml-3 cursor-pointer text-eclipse"
+                      className="md:ml-8 mobile:ml-3 cursor-pointer text-shiny"
                     />
                   ) : (
                     <FaPlus
                       size={15}
-                      className="md:ml-8 mobile:ml-3 rounded-md cursor-pointer text-eclipse"
+                      className="md:ml-8 mobile:ml-3 rounded-md cursor-pointer text-shiny"
                     />
                   )}
                 </button>

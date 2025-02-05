@@ -12,7 +12,10 @@ const Questions = () => {
   return (
     <main className="py-10 h-screen bg-older overflow-hidden relative">
       <div className="absolute">
-        <img src="/images/abstract/icon-dotted-map-2.png" alt="Background Icon" />
+        <img
+          src="/images/abstract/icon-dotted-map-2.png"
+          alt="Background Icon"
+        />
       </div>
       <div className="container mx-auto px-5 relative z-0 h-full">
         <div className="flex justify-center items-center gap-5 relative z-20 h-full flex-wrap">
@@ -22,8 +25,10 @@ const Questions = () => {
               <a
                 key={el.id}
                 onClick={() => setClicked(Number(el.id))} // Ensure it's a number
-                className={`hover:border-l-4 ml-[4px] hover:ml-0 hover:border-eclipse p-2 cursor-pointer transition-all ${
-                  clicked === Number(el.id) ? "border-l-4 border-eclipse ml-0 font-bold" : ""
+                className={`hover:border-l-4 ml-[4px] hover:ml-0 hover:border-shiny p-2 cursor-pointer transition-all ${
+                  clicked === Number(el.id)
+                    ? "border-l-4 border-shiny ml-0 font-bold"
+                    : ""
                 }`}
               >
                 <h1 className="text-xl font-semibold">{el.heading}</h1>

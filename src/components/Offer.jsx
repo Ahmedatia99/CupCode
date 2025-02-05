@@ -27,7 +27,7 @@ const Offer = () => {
         </div>
         <div className="max-sm:hidden">
           <img
-            src="/images/discount-animate (1).svg"
+            src="/images/discount-animate (3).svg"
             className="w-2xl max-md:w-lg"
           />
         </div>

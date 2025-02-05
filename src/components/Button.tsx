@@ -14,9 +14,9 @@ export const Button = ({
   className,
 }: ButtonProps) => {
   const variants = {
-    primary: "bg-eclipse text-white py-3 px-8 glow-on-hover",
+    primary: "bg-shiny text-white py-3 px-8 glow-on-hover",
     second:
-      "text-white py-1.5 px-4  bg-eclipse  hover:opacity-95 transition-all shadow-lg",
+      "text-white py-1.5 px-4  bg-shiny  hover:opacity-95 transition-all shadow-lg",
   }[variant];
 
   return (
