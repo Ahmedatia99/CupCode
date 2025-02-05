@@ -15,8 +15,8 @@ const Courses = () => {
     },
   };
   return (
-    <main className="h-screen container mx-auto py-8 max-sm:py-2 overflow-hidden">
-      <div className="relative mb-10 max-sm:mb-3">
+    <main className="h-screen container mx-auto py-8 max-sm:py-2 overflow-hidden xl:flex flex-col justify-center items-center">
+      <div className="relative max-sm:mb-3">
         <h1 className="text-center text-gray-300 font-bold text-6xl max-sm:text-5xl tracking-widest">
           Courses
         </h1>

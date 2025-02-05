@@ -10,7 +10,7 @@ const Questions = () => {
   );
 
   return (
-    <main className="py-10 h-screen bg-older overflow-hidden relative">
+    <main className="py-10 h-screen bg-older overflow-hidden relative flex justify-between items-center">
       <div className="absolute">
         <img
           src="/images/abstract/icon-dotted-map-2.png"

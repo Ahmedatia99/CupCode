@@ -12,12 +12,13 @@ export const Button = ({
   variant = "primary",
   children,
   className,
+  onClick,
 }: ButtonProps) => {
   const variants = {
     primary: "bg-shiny text-white py-3 px-8 glow-on-hover",
     second:
       "text-white py-1.5 px-4  bg-shiny  hover:opacity-95 transition-all shadow-lg",
-    morning: "text-shiny py-1.5 px-4 bg-white font-medium",
+    morning: "text-shiny py-3 px-5 bg-white font-semibold",
   }[variant];
 
   return (
@@ -26,6 +27,7 @@ export const Button = ({
         cursor-pointer rounded-lg
         ${variants} ${className}
         `}
+      onClick={onClick}
     >
       <span className={`text-[16px] px-2 `}>{action}</span>
       {children}
