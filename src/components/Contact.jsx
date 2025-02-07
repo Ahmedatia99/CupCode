@@ -24,10 +24,12 @@ const Contact = () => {
           <img
             src="/images/tag.png"
             className="w-16 absolute right-10 max-sm:hidden"
+            loading="lazy"
           />
           <img
             src="/images/coding.png"
             className="w-12 absolute left-10 max-sm:hidden"
+            loading="lazy"
           />
           <div className="text-white flex-col flex justify-center items-center">
             <h1 className="text-4xl max-sm:text-2xl flex flex-col items-center">

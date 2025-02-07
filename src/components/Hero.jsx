@@ -1,15 +1,19 @@
 import { icons } from "./../constants/index";
 import { Button } from "./Button";
+import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <main className="container mx-auto max-sm:px-2 h-[calc(100vh-106px)]">
       <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-10 max-sm:gap-5 items-start max-md:items-center max-sm:items-start 3xl:items-center h-full">
         {/* article */}
         <div className="flex justify-start lg:justify-center flex-col items-start h-[70%]">
-          <img
+          <motion.img
             src="./images/tag.png"
             alt="tag"
-            className="animated max-sm:w-14 max-sm:h-14 max-md:w-14"
+            className="max-sm:w-14 max-sm:h-14 max-md:w-14"
+            loading="lazy"
+            animate={{ y: [-10, 20, -10] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           />
           <h1 className="text-6xl max-sm:text-4xl max-md:text-5xl mt-5 text-darkness font-semibold">
             Best Online Learning <br />
@@ -19,6 +23,7 @@ const Hero = () => {
                 src="./images/rocket.png"
                 alt="rocket"
                 className="w-18 h-18 max-sm:w-12 max-sm:h-12 max-md:w-14 max-md:h-auto"
+                loading="lazy"
               />
             </span>
           </h1>
@@ -27,8 +32,13 @@ const Hero = () => {
           </p>
           <Button action="Contact Now" />
 
-          <div className="swiping mt-20 lg:mt-10 max-sm:hidden">
-            <img src="/images/abstract/dots-1.png" />
+          <div className=" mt-20 lg:mt-10 max-sm:hidden">
+            <motion.img
+              src="/images/abstract/dots-1.png"
+              loading="lazy"
+              animate={{ x: [0, 150, 0] }}
+              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+            />
           </div>
         </div>
         {/* icons && main image */}
@@ -40,9 +50,11 @@ const Hero = () => {
               alt={icon.alt}
               className="w-18 h-18 aspect-auto relative max-sm:hidden max-md:w-14 max-md:h-auto"
               style={{ left: `-${icon.left}%`, top: `-${icon.top}%` }}
+              loading="lazy"
             />
           ))}
           <img
+            loading="lazy"
             src="/images/main-img.png"
             className="aspect-auto relative left-0 bottom-0 3xl:top-0 lg:bottom-32 lg:w-80 w-96 3xl:scale-125 max-sm:-bottom-10 max-sm:left-0 max-sm:w-60 max-sm:scale-125 max-md:w-70 max-md:bottom-0"
           />

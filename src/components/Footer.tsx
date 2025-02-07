@@ -9,6 +9,7 @@ const Footer = () => {
                 src="/images/logo.png"
                 className="mr-3 h-8"
                 alt="FlowBite Logo"
+                loading="lazy"
               />
             </a>
           </div>

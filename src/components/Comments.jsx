@@ -1,5 +1,6 @@
 import Swiping from "./Swiping";
 import Footer from "./Footer";
+import { motion } from "framer-motion";
 
 const Comments = () => {
   return (
@@ -9,7 +10,8 @@ const Comments = () => {
           <div className="flex justify-end">
             <img
               src="/images/quote.png"
-              className="aspect-auto max-sm:w-20 max-md:w-18 "
+              className="aspect-auto max-sm:w-20 max-md:w-18"
+              loading="lazy"
             />
           </div>
           <h1 className="text-5xl max-sm:text-3xl max-md:text-4xl text-darkness tracking-tight leading-14 max-md:leading-10 max-sm:leading-8 font-semibold">
@@ -24,15 +26,22 @@ const Comments = () => {
             <img
               src="/images/abstract/vector-7.png"
               className="max-md:rotate-180 max-md:absolute max-md:right-0"
+              loading="lazy"
             />
-            <img
+            <motion.img
               src="/images/abstract/dots-1.png"
-              className="swiping aspect-auto w-auto h-14 absolute bottom-0 max-md:hidden"
+              className="aspect-auto w-auto h-14 absolute bottom-0 max-md:hidden"
+              animate={{ x: [0, 150, 0] }}
+              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
             />
           </div>
         </div>
         <div>
-          <img src="/images/abstract/cover-comment.png" className="absolute max-md:w-48"/>
+          <img
+            src="/images/abstract/cover-comment.png"
+            className="absolute max-md:w-48"
+            loading="lazy"
+          />
           <Swiping />
         </div>
       </div>

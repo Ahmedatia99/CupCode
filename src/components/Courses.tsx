@@ -125,14 +125,17 @@ const Courses = () => {
           <img
             src="/images/abstract/price-1.webp"
             className="absolute -top-20 -z-50 right-0 max-sm:hidden"
+            loading="lazy"
           />
           <img
             src="/images/abstract/icon-book.webp"
             className="absolute -top-20 max-sm:left-2 max-sm:top-5  -z-50 left-12"
+            loading="lazy"
           />
           <img
             src="/images/abstract/icon-paper-plan.webp"
             className="absolute top-[55%] left-[10%] max-sm:bottom-0 -z-50 rotate-6"
+            loading="lazy"
           />
         </div>
       </div>
