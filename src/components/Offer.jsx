@@ -18,8 +18,7 @@ const Offer = () => {
           </h1>
           <h4 className="text-2xl max-sm:text-lg mb-3 font-semibold">Create Your Free Account Today!</h4>
           <p className="text-gray-500 max-w-sm max-sm:text-sm max-sm:text-center">
-            Lorem ipsum dolor sit amet consectetur. Non convallis sed id aliquam
-            tempus. Volutpat tortor tincidunt egestas sit risus donec.
+           Take advantage of this limited-time offer to kickstart your learning journey with us.
           </p>
           <div className="mt-8">
             <Button action="Read more" variant="second" className="" />

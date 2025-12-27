@@ -66,22 +66,22 @@ export const objectives:ObjectivesItem[] = [
   {
     id: "0",
     title: "Free Trials",
-    info: "Lorem ipsum dolor sit amet cons ectetur. Non convallis sed id.",
+    info: " ",
   },
   {
     id: "1",
     title: "Lifetime Access",
-    info: "Lorem ipsum dolor sit amet cons ectetur. Non convallis sed id.",
+    info: "limited time offer for free trials.",
   },
   {
     id: "2",
     title: "Best Teachers",
-    info: "Lorem ipsum dolor sit amet cons ectetur. Non convallis sed id.",
+    info: "Best instructors around each course.",
   },
   {
     id: "3",
     title: "24/7 Support",
-    info: "Lorem ipsum dolor sit amet cons ectetur. Non convallis sed id.",
+    info: "support team ready to help you anytime.",
   },
 ];
 export interface FeatureItem {
@@ -105,38 +105,38 @@ export const questions:QuestionsItem[] = [
   {
     id: 0,
     categoryId: 1,
-    ques: "lorem ipsum dolor sit amet cons ectetur",
-    ans: "lorem ipsum dolor sit amet",
+    ques: "What Time For Classes ?",
+    ans: "classes take maximum 3 hours per 3 days in week",
   },
   {
     id: 1,
     categoryId: 2,
-    ques: "lorem ipsum dolor sit amet cons ectetur",
-    ans: "lorem ipsum dolor sit amet",
+    ques: "what is the refund policy ?",
+    ans: "you can request a refund within 14 days of purchase",
   },
   {
     id: 2,
     categoryId: 2,
-    ques: "lorem ipsum dolor sit amet cons ectetur",
-    ans: "lorem ipsum dolor sit amet",
+    ques: "What is the payment method ?",
+    ans: "we accept credit cards, debit cards, and PayPal",
   },
   {
     id: 3,
     categoryId: 3,
-    ques: "lorem ipsum dolor sit amet cons ectetur",
-    ans: "lorem ipsum dolor sit amet",
+    ques: "What is the course duration ?",
+    ans: "the course duration is 3 months",
   },
   {
     id: 4,
     categoryId: 3,
-    ques: "lorem ipsum dolor sit amet cons ectetur",
-    ans: "lorem ipsum dolor sit amet",
+    ques: "what is the course content ?",
+    ans: "the course content includes video lectures, assignments, and quizzes",
   },
   {
     id: 5,
     categoryId: 3,
-    ques: "lorem ipsum dolor sit amet cons ectetur",
-    ans: "lorem ipsum dolor sit amet",
+    ques: "Do I get a certificate after completion ?",
+    ans: "yes, you will receive a certificate upon successful completion of the course",
   },
 ];
 export interface CommentItem {
@@ -149,29 +149,29 @@ export interface CommentItem {
 export const comments:CommentItem[] = [
   {
     id: "0",
-    name: "Ahmed Atia",
-    comment: "lorem ipsum dolor sit amet cons ectetur al met amet et al.",
+    name: "Mahmoud Salah",
+    comment: "they are providing me with the best experience ever.",
     img: "/images/hawara.jpg",
     rating:5
   },
   {
     id: "1",
-    name: "Ahmed Atia",
-    comment: "lorem ipsum dolor sit amet cons ectetur al met amet et al.",
+    name: "Mohammed Hassan",
+    comment: "I am loving the courses and the content is very useful.",
     img: "/images/hawara.jpg",
     rating:4
   },
   {
     id: "2",
-    name: "Ahmed Atia",
-    comment: "lorem ipsum dolor sit amet cons ectetur al met amet et al.",
+    name: "Mohammed Abdelghany",
+    comment: "Thanks Hawara, you are amazing and most amazing platform to learn new skills.",
     img: "/images/hawara.jpg",
     rating:5
   },
   {
     id: "3",
     name: "Ahmed Atia",
-    comment: "lorem ipsum dolor sit amet cons ectetur al met amet et al.",
+    comment: "Highly recommend to everyone looking to learn new skills.",
     img: "/images/hawara.jpg",
     rating:4
   },

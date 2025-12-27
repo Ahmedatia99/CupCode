@@ -47,10 +47,10 @@ const KnowUs = () => {
             Grow your skills learn with us from anywhere.
           </h1>
           <p className="mt-3 text-gray-400 max-sm:text-sm max-md:text-sm">
-            Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod
-            tempor incididunt labore dolore magna aliquaenim ad minim. Sed risus
-            augue, commodo ornare felis non, eleifend molestie metus pharetra
-            eleifend.
+            We are committed to providing high-quality education and resources
+            to help you achieve your learning goals. Our team of experienced
+            instructors and industry experts are dedicated to creating engaging
+            and effective learning experiences.
           </p>
           <div className="grid grid-cols-2">
             {feature.map((item) => (

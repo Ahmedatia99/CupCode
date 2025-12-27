@@ -19,8 +19,9 @@ const Comments = () => {
             <span className="font-courgette font-medium"> Students!</span>
           </h1>
           <p className="text-gray-500 mt-5">
-            Lorem ipsum dolor sit amet consectetur. Non convallis sed id aliquam
-            tempus. Volutpat tortor tincidunt egestas sit risus donec.
+            Hear from our students about their learning experiences and how our
+            platform has helped them achieve their goals. Their success stories
+            speak for themselves!
           </p>
           <div className="flex justify-center mt-10 relative max-sm:hidden ">
             <img
